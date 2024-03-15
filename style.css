@@ -70,7 +70,7 @@ body {
 }
 
 .display-box {
-    width: 80%;
+    width: 100%;
     background-color: #ffffff;
     border: 1px solid #ececec;
     margin: 10px;
@@ -281,4 +281,57 @@ ol {
         margin-left: 0ch;
     }
 
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form {
+    display: inline-block;
+}
+
+.contact-form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    padding: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.msg {
+    width: 190px;
+}
+
+.message-bar {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    margin: 0 auto;
+}
+
+@media (max-width:476px) {
+    .message-bar {
+        background-color: #f0f0f0;
+        color: #333;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 80%;
+        margin: 0 auto;
+    }
 }

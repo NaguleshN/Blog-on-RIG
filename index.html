@@ -67,7 +67,7 @@
                     </div>
                     <div class="blog-text">
                         <span>#1</span>
-                        <a href="#" class="blog-title">iQube </a>
+                        <a href="iqube.html" class="blog-title">iQube </a>
                         <p>iQube is an innovation Centre for every tech enthusiasts that.......
                         </p>
                         <a href="iqube.html">Read more ..</a>
@@ -83,7 +83,7 @@
                     </div>
                     <div class="blog-text">
                         <span>#2</span>
-                        <a href="#" class="blog-title">Garage </a>
+                        <a href="garage.html" class="blog-title">Garage </a>
                         <p>Garage is a student involved Product Development - Research Centre of.....</p>
                         <a href="garage.html">Read more ..</a>
                     </div>
@@ -98,7 +98,7 @@
                     </div>
                     <div class="blog-text">
                         <span>#3</span>
-                        <a href="#" class="blog-title">Re` -Research cell</a>
+                        <a href="re.html" class="blog-title">Re` -Research cell</a>
                         <p>Ré aims to cultivate and promote research and explorative culture.....</p>
                         <a href="re.html">Read more ..</a>
                     </div>
@@ -108,7 +108,37 @@
         </div>
 
 
+        <div class="intro-box">
+            <div class="intro-img">
+                <div class="intro-text">
+                    <span>For more information contact me ..</span>
+                    <h1 class="blog-title"> Contact Form</h1>
 
+                    <div id="message-bar" class="message-bar" style="display:none;"></div>
+
+                    <div class="form-container" id="myForm">
+                        <form id="myForm" action="index.html" class="contact-form">
+                            <div>
+                                <label for="username">Username</label>
+                                <input id="username" name="username" type="text" required />
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input id="email" name="email" type="email" />
+                            </div>
+                            <div>
+                                <label for="msg">Message</label>
+                                <textarea id="msg" name="msg" class="msg" required></textarea>
+                            </div>
+                            <div>
+                                <label></label>
+                                <button onclick=validate() type="submit">Submit </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     </section>
@@ -120,6 +150,21 @@
             <a href="https://discordapp.com/users/nagulesh_33958">Discord</a>
         </p>
     </div>
+    <script>
+        function validate() {
+            var username = document.getElementById("username").value.trim();
+            var email = document.getElementById("email").value.trim();
+            var msg = document.getElementById("msg").value.trim();
+
+            if (username == "" || email == "" || msg == "") {
+                alert("Please fill all the fields");
+            }
+            else {
+                alert("Thank you for contacting me. I will get back to you soon");
+            }
+        }
+    </script>
+
 </body>
 
 </html>
