@@ -53,6 +53,17 @@ body {
     align-items: left;
 }
 
+.counter{
+    display:flex;
+    
+}
+.blog-heading h5 {
+    color: #2b2b2b;
+    display: flex;
+    justify-content: right;
+    align-items: left;
+}
+
 .blog-container {
     display: flex;
     justify-content: center;
@@ -71,7 +82,7 @@ body {
 
 .display-box {
     width: 100%;
-    background-color: #ffffff;
+    background-color: #f2f2f2;
     border: 1px solid #ececec;
     margin: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
@@ -283,7 +294,7 @@ ol {
 
 }
 
-.form-container {
+/* .form-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -310,7 +321,7 @@ ol {
 
 .msg {
     width: 190px;
-}
+} */
 
 .message-bar {
     background-color: #f0f0f0;
@@ -334,4 +345,43 @@ ol {
         width: 80%;
         margin: 0 auto;
     }
+}
+
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #ebdfdf;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: red;
 }

@@ -14,12 +14,16 @@
 </head>
 
 <body>
-
     <section id="blog">
         <div class="blog-heading">
             <span>A blog website on leading forums of Kumaraguru college of technology</span>
             <h3>RIG <a class="more-heading">-Re, iQube ,Garage</a></h3>
+            <div class="counter">
+                <h5>Views count: &nbsp;&nbsp;&nbsp;</h5>
+                <script type="text/javascript" src="//counter.websiteout.com/js/2/7/0/0"></script>
+            </div>
             <h4>Made by, NAGULESH</h4>
+
             <hr>
         </div>
 
@@ -124,7 +128,7 @@
                             </div>
                             <div>
                                 <label for="email">Email</label>
-                                <input id="email" name="email" type="email" />
+                                <input id="email" name="email" type="email" required />
                             </div>
                             <div>
                                 <label for="msg">Message</label>
@@ -132,7 +136,8 @@
                             </div>
                             <div>
                                 <label></label>
-                                <button onclick=validate() type="submit">Submit </button>
+                                <!-- <button onclick=validate() type="submit">Submit </button> -->
+                                <input onclick=validate() type="submit">
                             </div>
                         </form>
                     </div>
@@ -150,6 +155,16 @@
             <a href="https://discordapp.com/users/nagulesh_33958">Discord</a>
         </p>
     </div>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K8PTRV11MB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-K8PTRV11MB');
+    </script>
     <script>
         function validate() {
             var username = document.getElementById("username").value.trim();
