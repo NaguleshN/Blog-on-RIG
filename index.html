@@ -23,7 +23,6 @@
                 <script type="text/javascript" src="//counter.websiteout.com/js/2/7/0/0"></script>
             </div>
             <h4>Made by, NAGULESH</h4>
-            <!-- <p id="count"></p> -->
 
             <hr>
         </div>
@@ -137,7 +136,6 @@
                             </div>
                             <div>
                                 <label></label>
-                                <!-- <button onclick=validate() type="submit">Submit </button> -->
                                 <input onclick=validate() type="submit">
                             </div>
                         </form>
@@ -148,6 +146,7 @@
 
 
     </section>
+    <hr>
     <div class="footer">
         <p>&copy; Nagulesh II CSE .KCT,CBE<br>Connect with me on :
             <a href="https://github.com/NaguleshN">Github</a>&nbsp;&nbsp;
@@ -165,17 +164,39 @@
     </div>
 
     <script>
+        
         function validate() {
-            var username = document.getElementById("username").value.trim();
-            var email = document.getElementById("email").value.trim();
-            var msg = document.getElementById("msg").value.trim();
-
-            if (username == "" || email == "" || msg == "") {
-                alert("Please fill all the fields");
+            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var msg = document.getElementById('msg').value;
+    
+            // Check if username field is empty
+            if (username.trim() === '') {
+                alert('Please enter your username');
+                return false;
             }
-            else {
-                alert("Thank you for contacting me. I will get back to you soon");
+    
+            // Check if email field is empty
+            if (email.trim() === '') {
+                alert('Please enter your email');
+                return false;
             }
+    
+            // Check if email is valid using regex
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address');
+                return false;
+            }
+    
+            // Check if message field is empty
+            if (msg.trim() === '') {
+                alert('Please enter your message');
+                return false;
+            }
+    
+            // If all validation passes, submit the form
+            return true;
         }
 
 
